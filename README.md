@@ -34,7 +34,9 @@ https://api.github.com/search/repositories?q=YOUR_SEARCH_KEYWORD
 6. Open the folowing URL in your browser: https://localhost:5001/
 7. enjoy...
 
-## 
+## For testing:
+
+The URL: https://localhost:5001/DeleteAll will delete the items saved in the session...
 
 
 

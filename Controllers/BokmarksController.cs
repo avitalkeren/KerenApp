@@ -12,6 +12,19 @@ namespace SessionApi.Controllers
     [ApiController]
     public class BookmarksController : ControllerBase
     {
+         // DELETE api/DeleteAll/
+        [HttpGet("/DeleteAll")]
+        public void DeleteAll()
+        {
+             if (HttpContext.Session.Get("BookmarkArr") == null) {
+                return;
+            }
+            else {
+                HttpContext.Session.Remove("BookmarkArr");              
+            }
+        }
+
+
         // GET api/Bookmarks
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
@@ -48,18 +61,6 @@ namespace SessionApi.Controllers
             return;
         }
 
-         // DELETE api/Bookmarks/
-        [Route("api/Bookmarks/DeleteAll")]
-        [HttpGet]
-        public void DeleteAll()
-        {
-             if (HttpContext.Session.Get("BookmarkArr") == null) {
-                return;
-            }
-            else {
-                HttpContext.Session.Remove("BookmarkArr");              
-            }
-        }
  /*
         // GET api/values/5
         [HttpGet("{id}")]
