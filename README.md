@@ -12,9 +12,11 @@ https://api.github.com/search/repositories?q=YOUR_SEARCH_KEYWORD
 3. Render the results as gallery items where each item will show to repository name, avatar of the owner and a bookmark button.
 
 **please see Controllers\BokmarksController.cs**
+
 4. When a user will bookmark a repository you will store the entire result to the user's session(Use ASP.NET session).
 
 **please see C ClientApp\src\components\MyBookmarks.js**
+
 5. (Bonus) - Add a Bookmark screen that will show all the bookmarked repositories.
 
 6. I have upload your project to GitHub
