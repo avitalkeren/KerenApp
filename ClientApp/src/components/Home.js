@@ -68,18 +68,12 @@ export class Home extends Component {
     );
   }
 }
+
 function BookmarksList(props) {
   const repositories = props.repositories;
-  const listItems = repositories.map(repo =>
-      
-        <Item repo={repo}></Item>
-        
-      )
-  return (
-       <div>{listItems}</div>
-      );
+  const listItems = repositories.map(repo => <Item repo={repo}></Item>)
+  return (<div>{listItems}</div>);
   }
-
 
 
 class Item extends Component {
