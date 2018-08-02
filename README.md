@@ -28,9 +28,13 @@ https://api.github.com/search/repositories?q=YOUR_SEARCH_KEYWORD
 ## how to run the project:
 1. Clone the repository localy
 2. In command promt navigate to the project's folder
-3. Type: ``` dotnet run  ```
-4. Open the folowing URL in your browser: https://localhost:5001/
-5. enjoy...
+3. Type: ``` npm install ./ClientApp/ ```
+4. Type: ``` dotnet restore  ```
+5. Type: ``` dotnet run  ```
+6. Open the folowing URL in your browser: https://localhost:5001/
+7. enjoy...
+
+## 
 
 
 
