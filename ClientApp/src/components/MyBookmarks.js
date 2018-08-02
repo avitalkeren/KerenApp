@@ -14,14 +14,21 @@ export class MyBookmarks extends Component {
     axios.get('https://localhost:5001/api/Bookmarks/')
     .then(function(response) {
       console.log(response);
+      if (response == undefined  || 
+        response.data == null || 
+        response.data == undefined ||
+        response.data == "") {
+        ReactDOM.render(<lable>No Bookmarks Saved..</lable>,  document.getElementById('list'))
 
-     
+      }
+     else {
       ReactDOM.render(
         <BookmarksList repositories={response.data} />,
         document.getElementById('list'))
+      }
       
     })
-    .catch(error => {console.log(error.response)
+    .catch(error => {console.log(error)
     });
   }
   render() {

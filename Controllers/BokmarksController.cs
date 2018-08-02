@@ -28,7 +28,7 @@ namespace SessionApi.Controllers
         }
 
 
-        // GET api/Bookmarks/values
+        // POST api/Bookmarks/
         [HttpPost]
         public void Post(object repo)
         {
@@ -48,8 +48,8 @@ namespace SessionApi.Controllers
             return;
         }
 
-         // DELETE api/values/5
-        [Route("api/[controller]/DeleteAll")]
+         // DELETE api/Bookmarks/
+        [Route("api/Bookmarks/DeleteAll")]
         [HttpGet]
         public void DeleteAll()
         {
